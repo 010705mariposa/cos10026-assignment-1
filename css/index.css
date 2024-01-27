@@ -1,0 +1,23 @@
+:root {
+    --custom-color: initial;
+    --custom-font-size: unset;
+    --custom-line-height: initial;
+}
+
+
+.text-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-description {
+    font-size: 16px;
+    font-weight: normal;
+    color: #888888;
+}
+
+.text-paragraph {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+}
