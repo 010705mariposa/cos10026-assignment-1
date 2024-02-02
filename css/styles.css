@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat_bold{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+  }
+
+.montserrat_normal{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+  }
+  :root {
+    --custom-color: initial;
+    --custom-font-size: unset;
+    --custom-line-height: initial;
+ }
+
+
+ .text-title {
+    font-size: 24px;
+    font-weight: bold;
+ }
+
+ .text-description {
+    font-size: 16px;
+    font-weight: normal;
+    color: #888888;
+ }
+
+ .text-paragraph {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+ }
+
+html{
+    background-color: white;
+}
+
+header {
+    background-color: gray;
+    padding: 10px 1px;
+  }
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.nav-item {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+}
+  
+.logo {
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.section_1 {
+    background-color: #f0f0f0; /* Màu nền cho phần 1 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.benefit-description{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    width: 30vw;
+  }
+  
+  .benefit i {
+    font-size: 2rem;
+    color: #f00;
+  }
+  
+  .benefit h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .benefit p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+.section_3 {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+    }
+  
+  .section_3 h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .section_3 h4 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .section_3 form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .section_3 input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .section_3 button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+.info {
+    max-width: 500px; /* Đặt chiều rộng tối đa cho phần thông tin */
+}
+
+img {
+    max-width: 40%; /* Đảm bảo hình ảnh không vượt quá phần tử chứa */
+    height: auto;
+    padding: 5px;
+}
+
+h2, h3, h4, p {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-menu {
+    flex: 1;
+  }
+  
+  .footer-menu h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-menu li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .copyright {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .copyright p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
