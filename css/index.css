@@ -1,19 +1,56 @@
+
+/* text */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.montserrat_bold{
+h1{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800px;
+    font-weight: 900px;
     font-style: normal;
-  }
+}
 
-.montserrat_normal{
+p{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500px;
+    font-weight: 700px;
     font-style: normal;
-  }
+}
+/* colors */
+header{
+    background-color: #ece0d1;
+    background-size: cover;
+}
 
+/* parent containers */
+.row {
+display: flex;
+padding: 20px;
+}
+
+.column{
+    flex: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* image */
+.logo{
+    width: 18%;
+}
+
+#scallops_image{
+    width: 85%;
+}
+
+
+
+
+/* ??? */
 :root {
     --custom-color: initial;
     --custom-font-size: unset;
