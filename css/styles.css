@@ -1,0 +1,11 @@
+html{
+    background-color: #F6E3BA;
+}
+nav > ul{
+    background-color: white;
+}
+nav > ul > li {
+    display: inline;
+    padding: 20px;
+    width: 30px;
+}
