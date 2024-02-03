@@ -160,6 +160,11 @@ td, th {
     width: 40%;
 }
 
+.logo_apply{
+    margin-top: 10%;
+    width: 50%;
+}
+
 #meet_the_members{
     width: 30%;
 }
@@ -170,8 +175,18 @@ td, th {
 }
 
 /* footer */
+.nav-item-footer{
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+}
+.nav-item-footer:hover{
+    color: white;
+}
+
 footer {
-    background-color:#cccccc;
+    background-color: #d8d8d8;
     color: black;
     padding: 30px 0;
   }
