@@ -41,19 +41,41 @@ html{
     background-color: white;
 }
 
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+}
+
+h1 h2 h3 h4 h5 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900px;
+    font-style: normal;
+}
+
+a{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+}
+
 header {
     background-color: gray;
     padding: 10px 1px;
-  }
+}
   
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 25px;
 }
   
 .nav-item {
-    color: #333;
+    color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 15px;
@@ -97,10 +119,6 @@ body {
     width: 30vw;
   }
   
-  .benefit i {
-    font-size: 2rem;
-    color: #f00;
-  }
   
   .benefit h5 {
     font-size: 1.2rem;
@@ -111,29 +129,72 @@ body {
     font-size: 1rem;
     line-height: 1.5;
   }
-.section_3 {
-    background-color: #f5f5f5;
+.section_3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.part {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.part h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.part p {
+    margin-bottom: 20px;
+}
+.part a {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin: 10px auto; 
+}
+
+.section_4 {
+    background-color: white;
     padding: 50px 0;
     text-align: center;
+    
     }
   
-  .section_3 h3 {
+  .section_4 h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .section_4 h3 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
   
-  .section_3 h4 {
+  .section_4 h4 {
     font-size: 1.2rem;
     margin-bottom: 30px;
   }
   
-  .section_3 form {
+  .section_4 form {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
   }
   
-  .section_3 input[type="email"] {
+  .section_4 input[type="email"] {
     width: 300px;
     padding: 10px;
     font-size: 1rem;
@@ -141,7 +202,7 @@ body {
     border-radius: 5px;
   }
   
-  .section_3 button[type="submit"] {
+  .section_4 button[type="submit"] {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -150,6 +211,9 @@ body {
     border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
+  }
+  .section_4 ul li{
+    display: inline;
   }
 
 .info {
@@ -167,7 +231,7 @@ h2, h3, h4, p {
 }
 
 footer {
-    background-color: #333;
+    background-color: gray;
     color: #fff;
     padding: 30px 0;
   }
@@ -182,6 +246,7 @@ footer {
   .footer-left {
     flex: 1;
     text-align: left;
+    padding: 50px;
   }
   
   .footer-right {
@@ -207,20 +272,50 @@ footer {
   
   .footer-menu li {
     margin-bottom: 5px;
+    display: inline;
+  }
+
+  .footer-menu img {
+    max-width: 40%; /* Đảm bảo hình ảnh không vượt quá phần tử chứa */
+    height: 35px;
+    padding: 5px;
   }
   
   .footer-menu a {
-    color: #fff;
-    text-decoration: none;
-  }
+  color: #fff;
+  text-decoration: none;
+}
   
-  .copyright {
-    background-color: #222;
-    padding: 10px 0;
-    text-align: center;
-  }
+.copyright {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+    
+}
   
-  .copyright p {
-    margin: 0;
-    font-size: 0.8rem;
+.copyright p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.job-posting {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 4px;
   }
+  .job-posting h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  }
+  .job-posting p {
+  margin-bottom: 0.5rem;
+  }
+.job-title {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
