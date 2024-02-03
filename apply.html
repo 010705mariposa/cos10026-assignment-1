@@ -14,7 +14,7 @@
             <a href="jobs.html" class="nav-item gray">Jobs</a>
             <a href="apply.html" class="nav-item grayer">Apply</a>
             <a href="enhancements.html" class="nav-item dark_gray">Enhancements</a>
-            <a class="nav-item darker_gray" href="#">About</a>
+            <a class="nav-item darker_gray" href="about.html">About</a>
         </div>
         <div class="center">
             <img class="cookers_logo" src="assets/logo/cookers_logo.png" alt="logo">
@@ -27,21 +27,25 @@
                     <p>
                         <!-- Job reference number -->
                         <label for="refnum">Job reference number:</label>
+                        <br>
                         <input type="text" id="refnum" maxlength="5" required pattern="^[a-zA-Z0-9]">
                     </p>
                     <p>
                         <!-- First name -->
                         <label for="fname">First name:</label>
+                        <br>
                         <input type="text" id="fname" maxlength="20" required pattern="^[a-zA-Z]">
                     </p>
                     <p>
                         <!-- Last name -->
                         <label for="lname">Last name:</label>
+                        <br>
                         <input type="text" id="lname" maxlength="20" required pattern="^[a-zA-Z]">
                     </p>
                     <p>
                         <!-- Date of birth  -->
                         <label for="dob">Date of birth:</label>
+                        <br>
                         <input type="date" id="dob" pattern="\d{1,2}\/\d{1,2}\/\d{4}" required>
                     </p>
                     <p>
@@ -62,40 +66,26 @@
                 </div>
             </div>
             <div class="row grayer">
-                <div class="column_50 left">
-
+                <div class="column_50">
+                    <img class="logo_apply" src="assets/logo/logo.png" alt="logo">
                 </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               
-                <div class="column_30 grayer">
+                <div class="column_50 right">
                     <p>
                         <!-- Street address  -->
                         <label for="address">Street address:</label>
+                        <br>
                         <input type="text" id="address" maxlength="40" required pattern="^[a-zA-Z0-9]">
                     </p>
                     <p>
                         <!-- Suburb/town  -->
                         <label for="town">Suburb/Town:</label>
+                        <br>
                         <input type="text" id="town" maxlength="40" required pattern="^[a-zA-Z0-9]">
                     </p>
                     <p>
                         <!-- State  -->
                         <label id="state">State:</label>
+                        <br>
                         <select id="state" name="tutor">
                             <option value="">Please select</option>
                             <option value="VIC">VIC</option>
@@ -111,46 +101,89 @@
                     <p>
                         <!-- Postcode -->
                         <label for="pcode">Postcode:</label>
+                        <br>
                         <input type="text" id="pcode" maxlength="4" required pattern="[0-9]">
                     </p>
                     <p>
                         <!-- Email address  -->
                         <label for="mail">Email:</label>
+                        <br>
                         <input type="email" id="mail" required>
+                    </p>
+                    <p>
+                        <!-- Phone number  -->
+                        <label for="phone">Phone number:</label>
+                        <br>
+                        <input type="text" id="phone"  required pattern="^[0-9\s]{8,12}">
                     </p>
                 </div>
             </div>
-            <div col>
-
+            <div class="row dark_gray">
+                <div class="column_50 left">
+                    <p>
+                        <!-- Skill list  -->
+                        <legend>Skills:</legend>
+                        <label for="python">Python</label>
+                        <input type="checkbox" id="python">
+                        <label for="java">Java</label>
+                        <input type="checkbox" id="java">
+                        <label for="c">C++</label>
+                        <input type="checkbox" id="c">
+                        <label for="oskill">Other</label>
+                        <input type="checkbox" id="oskill">
+                    </p>
+                    <p>
+                        <!-- Other skills -->
+                        <p>&nbsp;</p>
+                        <label for="othskills"><p>Please list out your other skills:</p></label>
+                        <br>
+                        <textarea name="" id="othskills" cols="30" rows="10"></textarea>
+                    </p>
+                    <p>
+                        <!-- Submit button -->
+                        <input type="submit" value="Submit">
+                    </p>
+                </div>
+                <div class="column_50">
+                    <img class="logo_apply" src="assets/logo/logo.png" alt="logo">
+                </div>
             </div>
 
-           
-            
-            <p>
-                <!-- Phone number  -->
-                <label for="phone">Phone number:</label>
-                <input type="text" id="phone"  required pattern="^[0-9\s]{8,12}">
-            </p>
-            <p>
-                <!-- Skill list  -->
-                <legend>Skills:</legend>
-                <label for="oskill">Other</label>
-                <input type="checkbox" id="oskill">
-            </p>
-            <p>
-                <!-- Other skills -->
-                <label for="othskills">Please list out your other skills:</label>
-                <br>
-                <textarea name="" id="othskills" cols="30" rows="10"></textarea>
-            </p>
-            <p>
-                <!-- Submit button -->
-                <input type="submit">
-            </p>
         </form>
     </main>
     <footer>
-        <!-- footer here -->
+        <div class="footer-content">
+          <div class="footer-left">
+                <img class="logo" src="assets/logo/cookers_logo.png" alt="">
+                <p>Address: A35 Bach Dang Street, Tan Binh District, Vietnam</p>
+                <br>
+                <p>Contact:</p>
+                <p>vu051431@gmail.com</p>
+                <p>arlenephuong05@gmail.com</p>
+                <p>franbow1177@gmail.com</p>
+            </div>
+          <div class="footer-right">
+            <div class="footer-menu">
+                <h4>PERKS & BENEFITS</h4>
+                <a href="index.html" class="nav-item-footer"><h4>Home</h4></a>
+                <a href="jobs.html" class="nav-item-footer"><h4>Jobs</h4></a>
+                <a href="apply.html" class="nav-item-footer"><h4>Apply</h4></a>
+                <a href="about.html" class="nav-item-footer"><h4>About</h4></a>
+                <a href="enhancements.html" class="nav-item-footer"><h4>Enhancements</h4></a>
+            </div>
+            <div class="footer-menu">
+              <h4>FOLLOW US</h4>
+              <ul>
+                <li><a href="#"><img src="assets/icon/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="assets/icon/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="assets/icon/linkedin.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Cookers Limited. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

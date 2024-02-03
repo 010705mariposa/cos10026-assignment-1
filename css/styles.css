@@ -1,95 +1,298 @@
+
+/* text */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-.montserrat_bold{
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+h1{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800px;
+    font-weight: 800;
     font-style: normal;
-  }
+}
 
-.montserrat_normal{
+h2{
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: italic;
+}
+
+h3{
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+h4{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500px;
+    font-weight: 550;
     font-style: normal;
-  }
-  :root {
-    --custom-color: initial;
-    --custom-font-size: unset;
-    --custom-line-height: initial;
- }
-
-
- .text-title {
-    font-size: 24px;
-    font-weight: bold;
- }
-
- .text-description {
-    font-size: 16px;
-    font-weight: normal;
-    color: #888888;
- }
-
- .text-paragraph {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.5;
- }
-
-html{
-    background-color: white;
 }
 
 p{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700px;
-    font-style: normal;
-}
-
-h1 h2 h3 h4 h5 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900px;
+    font-weight: 450;
     font-style: normal;
 }
 
 a{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700px;
-    font-style: normal;
+    color: black;
+    text-decoration: none;
 }
 
-header {
-    background-color: gray;
-    padding: 10px 1px;
+a:hover{
+    color: #595959;
 }
-  
+
+dt{
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: italic;
+    text-align: left;
+    padding-left: 10%;
+}
+
+dd{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+/* button */
+input[type=submit] {
+  background-color: #a6a6a6;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* colors */
+
+.light_gray{
+    background-color: #f0f0f0;
+}
+
+.gray{
+    background-color: #d8d8d8;
+
+}
+
+.grayer{
+    background-color:#cccccc;
+
+}
+
+.dark_gray{
+    background-color: #bfbfbf;
+}
+
+.darker_gray{
+    background-color: #a6a6a6;
+}
+/* navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
+    overflow: hidden;
 }
   
 .nav-item {
+    float: left;
     color: black;
+    width: 100%;
+    padding: 15px 15px;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 15px;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    
 }
+
+.nav-item:hover{
+    background-color: #666666;
+    color: white;
+}
+
+/* parent containers */
+.row {
+display: flex;
+padding: 20px;
+}
+
+.column_50{
+    flex: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.column_30{
+    flex: 33.3%;
+    text-align: center;
+    padding: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+
+/* align */
+.center{
+    text-align: center;
+    padding: 20px;
+}
+.left{
+    text-align: left;
+    padding: 20px;
+}
+.right{
+  text-align: right;
+  padding: 20px;
+}
+
+/* image */
+.cookers_logo{
+    width: 20%;
+}
+
+.logo{
+    width: 40%;
+}
+
+.logo_apply{
+  margin-top: 10%;
+  width: 50%;
+}
+
+#meet_the_members{
+    width: 30%;
+}
+
+
+.member_pic{
+    width: 60%;
+}
+
+/* footer */
+
+.nav-item-footer{
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 15px;
+}
+
+.nav-item-footer:hover{
+  color: white;
+}
+
+footer {
+    background-color:#cccccc;
+    color: black;
+    padding: 30px 0;
+  }
   
-.logo {
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    flex: 1;
+    text-align: left;
+    padding: 50px;
+  }
+  
+  .footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-menu {
+    flex: 1;
+  }
+  
+  .footer-menu h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-menu li {
+    margin-bottom: 5px;
+    display: inline;
+  }
+
+  .footer-menu img {
+    max-width: 40%; /* Đảm bảo hình ảnh không vượt quá phần tử chứa */
+    height: 35px;
+    padding: 5px;
+  }
+  
+  .footer-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.copyright {
+    background-color: #bfbfbf;
+    padding: 10px 0;
+    text-align: center;
+      
+  }
+    
+  .copyright p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+  }
+
+
+/* ??? */
+:root {
+    --custom-color: initial;
+    --custom-font-size: unset;
+    --custom-line-height: initial;
+}
+
+.text-title {
+    font-size: 24px;
     font-weight: bold;
 }
-body {
-    margin: 0;
-    padding: 0;
+
+.text-description {
+    font-size: 16px;
+    font-weight: normal;
+    color: #888888;
 }
 
-
+.text-paragraph {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+}
 
 .section_1 {
     background-color: #f0f0f0; /* Màu nền cho phần 1 */
@@ -230,87 +433,18 @@ h2, h3, h4, p {
     margin: 0;
 }
 
-footer {
-    background-color: gray;
-    color: black;
-    padding: 30px 0;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .footer-left {
-    flex: 1;
-    text-align: left;
-    padding: 50px;
-  }
-  
-  .footer-right {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .footer-menu {
-    flex: 1;
-  }
-  
-  .footer-menu h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .footer-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-menu li {
-    margin-bottom: 5px;
-    display: inline;
-  }
-
-  .footer-menu img {
-    max-width: 40%; /* Đảm bảo hình ảnh không vượt quá phần tử chứa */
-    height: 35px;
-    padding: 5px;
-  }
-  
-  .footer-menu a {
-  color: black;
-  text-decoration: none;
-}
-  
-.copyright {
-  background-color: #222;
-  padding: 10px 0;
-  text-align: center;
-    
-}
-  
-.copyright p {
-  margin: 0;
-  font-size: 0.8rem;
-  color: white;
-}
-
 .job-posting {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem;
-  border: 1px solid black;
-  border-radius: 4px;
-  }
-  .job-posting h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  }
-  .job-posting p {
-  margin-bottom: 0.5rem;
-  }
-
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    }
+    .job-posting h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    }
+    .job-posting p {
+    margin-bottom: 0.5rem;
+    }
+  

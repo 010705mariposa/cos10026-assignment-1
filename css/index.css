@@ -65,6 +65,8 @@ dd{
     padding-top: 5%;
     padding-bottom: 5%;
 }
+
+
 /* colors */
 
 .light_gray{
@@ -151,6 +153,7 @@ td, th {
 }
 
 
+
 /* image */
 .cookers_logo{
     width: 20%;
@@ -160,10 +163,7 @@ td, th {
     width: 40%;
 }
 
-.logo_apply{
-    margin-top: 10%;
-    width: 50%;
-}
+
 
 #meet_the_members{
     width: 30%;
@@ -175,15 +175,7 @@ td, th {
 }
 
 /* footer */
-.nav-item-footer{
-    color: black;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 15px;
-}
-.nav-item-footer:hover{
-    color: white;
-}
+
 
 footer {
     background-color: #d8d8d8;
