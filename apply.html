@@ -4,80 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        Application Form
+        <!-- navbar -->
+        <div class="navbar">
+            <a href="index.html" class="nav-item light_gray">Home</a>
+            <a href="jobs.html" class="nav-item gray">Jobs</a>
+            <a href="apply.html" class="nav-item grayer">Apply</a>
+            <a href="enhancements.html" class="nav-item dark_gray">Enhancements</a>
+            <a class="nav-item darker_gray" href="#">About</a>
+        </div>
+        <div class="center">
+            <img class="cookers_logo" src="assets/logo/cookers_logo.png" alt="logo">
+        </div>    
     </header>
     <main>
         <form action=" https://mercury.swin.edu.au/it000000/formtest.php">
-            <p>
-                <!-- Job reference number -->
-                <label for="refnum">Job reference number:</label>
-                <input type="text" id="refnum" maxlength="5" required pattern="^[a-zA-Z0-9]">
-            </p>
-            <p>
-                <!-- First name -->
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" maxlength="20" required pattern="^[a-zA-Z]">
-            </p>
-            <p>
-                <!-- Last name -->
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" maxlength="20" required pattern="^[a-zA-Z]">
-            </p>
-            <p>
-                <!-- Date of birth  -->
-                <label for="dob">Date of birth:</label>
-                <input type="date" id="dob" pattern="\d{1,2}\/\d{1,2}\/\d{4}" required>
-            </p>
-            <p>
-                <!-- Gender  -->
-                <fieldset>
-                    <legend>Gender</legend>
-                    <label for="m">Male</label>
-                    <input type="radio" id="m">
-                    <label for="f">Female</label>
-                    <input type="radio" id="f">
-                    <label for="other">Other</label>
-                    <input type="radio" id="other">
-                </fieldset>
-            </p>
-            <p>
-                <!-- Street address  -->
-                <label for="address">Street address:</label>
-                <input type="text" id="address" maxlength="40" required pattern="^[a-zA-Z0-9]">
-            </p>
-            <p>
-                <!-- Suburb/town  -->
-                <label for="town">Suburb/Town:</label>
-                <input type="text" id="town" maxlength="40" required pattern="^[a-zA-Z0-9]">
-            </p>
-            <p>
-                <!-- State  -->
-                <label id="state">State:</label>
-                <select id="state" name="tutor">
-                    <option value="">Please select</option>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                </select>
-            </p>
-            <p>
-                <!-- Postcode -->
-                <label for="pcode">Postcode:</label>
-                <input type="text" id="pcode" maxlength="4" required pattern="[0-9]">
-            </p>
-            <p>
-                <!-- Email address  -->
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" required>
-            </p>
+            <div class="row">
+                <div class="column_30 gray">
+                    <p>
+                        <!-- Job reference number -->
+                        <label for="refnum">Job reference number:</label>
+                        <input type="text" id="refnum" maxlength="5" required pattern="^[a-zA-Z0-9]">
+                    </p>
+                    <p>
+                        <!-- First name -->
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" maxlength="20" required pattern="^[a-zA-Z]">
+                    </p>
+                    <p>
+                        <!-- Last name -->
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" maxlength="20" required pattern="^[a-zA-Z]">
+                    </p>
+                    <p>
+                        <!-- Date of birth  -->
+                        <label for="dob">Date of birth:</label>
+                        <input type="date" id="dob" pattern="\d{1,2}\/\d{1,2}\/\d{4}" required>
+                    </p>
+                    <p>
+                        <!-- Gender  -->
+                        <fieldset>
+                            <legend><p>Gender</p></legend>
+                            <label for="m"><p>Male</p></label>
+                            <input type="radio" id="m">
+                            <label for="f"><p></p></label>
+                            <input type="radio" id="f">
+                            <label for="other">Other</label>
+                            <input type="radio" id="other">
+                        </fieldset>
+                    </p>
+                </div>
+                <div class="column_30 grayer">
+                    <p>
+                        <!-- Street address  -->
+                        <label for="address">Street address:</label>
+                        <input type="text" id="address" maxlength="40" required pattern="^[a-zA-Z0-9]">
+                    </p>
+                    <p>
+                        <!-- Suburb/town  -->
+                        <label for="town">Suburb/Town:</label>
+                        <input type="text" id="town" maxlength="40" required pattern="^[a-zA-Z0-9]">
+                    </p>
+                    <p>
+                        <!-- State  -->
+                        <label id="state">State:</label>
+                        <select id="state" name="tutor">
+                            <option value="">Please select</option>
+                            <option value="VIC">VIC</option>
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="ACT">ACT</option>
+                        </select>
+                    </p>
+                    <p>
+                        <!-- Postcode -->
+                        <label for="pcode">Postcode:</label>
+                        <input type="text" id="pcode" maxlength="4" required pattern="[0-9]">
+                    </p>
+                    <p>
+                        <!-- Email address  -->
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" required>
+                    </p>
+                </div>
+            </div>
+
+           
+            
             <p>
                 <!-- Phone number  -->
                 <label for="phone">Phone number:</label>
