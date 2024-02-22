@@ -5,87 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <header>
-        <!-- navbar -->
-        <div class="navbar">
-            <a href="index.html" class="nav-item light_gray">Home</a>
-            <a href="jobs.html" class="nav-item gray">Jobs</a>
-            <a href="apply.html" class="nav-item grayer">Apply</a>
-            <a class="nav-item darker_gray" href="about.html">About</a>
-        </div>
-        <div class="center">
-            <img class="cookers_logo" src="assets/logo/cookers_logo.png" alt="logo">
-        </div>    
-    </header>
-    <main>
+    <div class="bgr rlt"></div>
+    <div class="s-30 bl-15 r-10 t-50 ln-1"></div>
+    <!-- <div class="s-50 bl-25 ln-1"></div> -->
+
+
+<!-- navbar -->
+    <header class="h-10 pd-h-5 jtf-btw alit-ct">
+      <h1>Cookers</h1>
+      <div class="jtf-evl bs-4">
+          <a href="index.html" class="fs-2r">Home</a>
+          <a href="jobs.html" class="fs-2r">Jobs</a>
+          <a href="apply.html" class="fs-2r">Apply</a>
+          <a href="about.html" class="fs-2r">About</a>
+      </div>
+      <strong id="hd-su">Sign up</strong>
+  </header>
+
+    <main class="pd-h-5">
         <form action=" https://mercury.swin.edu.au/it000000/formtest.php">
             <div class="row gray">
                 <div class="column_50 left">
                     <p>
                         <!-- Job reference number -->
-                        <label for="refnum">Job reference number:</label>
+                        <label class="fs-2 fw-3" for="refnum">Job reference number:</label>
                         <br>
                         <input type="text" id="refnum" maxlength="5" required pattern="^[a-zA-Z0-9]">
                     </p>
                     <p>
                         <!-- First name -->
-                        <label for="fname">First name:</label>
+                        <label class="fs-2 fw-3" for="fname">First name:</label>
                         <br>
                         <input type="text" id="fname" maxlength="20" required pattern="^[a-zA-Z]">
                     </p>
                     <p>
                         <!-- Last name -->
-                        <label for="lname">Last name:</label>
+                        <label class="fs-2 fw-3" for="lname">Last name:</label>
                         <br>
                         <input type="text" id="lname" maxlength="20" required pattern="^[a-zA-Z]">
                     </p>
                     <p>
                         <!-- Date of birth  -->
-                        <label for="dob">Date of birth:</label>
+                        <label class="fs-2 fw-3" for="dob">Date of birth:</label>
                         <br>
                         <input type="date" id="dob" pattern="\d{1,2}\/\d{1,2}\/\d{4}" required>
                     </p>
                     <p>
                         <!-- Gender  -->
-                        <fieldset>
+                        <fieldset class="job-posting mg-t-10vh">
                             <legend><p>Gender</p></legend>
-                            <label for="m"><p>Male</p></label>
+                            <label class="fs-2 fw-3" for="m"><p>Male</p></label>
                             <input type="radio" id="m">
-                            <label for="f"><p>Female</p></label>
+                            <label class="fs-2 fw-3" for="f"><p>Female</p></label>
                             <input type="radio" id="f">
-                            <label for="other"><p>Other</p></label>
+                            <label class="fs-2 fw-3" for="other"><p>Other</p></label>
                             <input type="radio" id="other">
                         </fieldset>
                     </p>
                 </div>
                 <div class="column_50">
-                    <img class="logo_apply" src="assets/logo/logo.png" alt="logo">
+                    <img class="mg-t-20vh sc-19 img" src="assets/icon/pc.png" alt="logo">
                 </div>
             </div>
+
+
             <div class="row grayer">
-                <div class="column_50">
-                    <img class="logo_apply" src="assets/logo/logo.png" alt="logo">
-                </div>
-                <div class="column_50 right">
+                <div class="column_50 left">
                     <p>
                         <!-- Street address  -->
-                        <label for="address">Street address:</label>
+                        <label class="fs-2 fw-3" for="address">Street address:</label>
                         <br>
                         <input type="text" id="address" maxlength="40" required pattern="^[a-zA-Z0-9]">
                     </p>
                     <p>
                         <!-- Suburb/town  -->
-                        <label for="town">Suburb/Town:</label>
+                        <label class="fs-2 fw-3" for="town">Suburb/Town:</label>
                         <br>
                         <input type="text" id="town" maxlength="40" required pattern="^[a-zA-Z0-9]">
                     </p>
                     <p>
                         <!-- State  -->
-                        <label id="state">State:</label>
+                        <label class="fs-2 fw-3"  id="state">State:</label>
                         <br>
-                        <select id="state" name="tutor">
+                        <select class="fs-2 fw-3" id="state" name="tutor">
                             <option value="">Please select</option>
                             <option value="VIC">VIC</option>
                             <option value="NSW">NSW</option>
@@ -99,44 +106,46 @@
                     </p>
                     <p>
                         <!-- Postcode -->
-                        <label for="pcode">Postcode:</label>
+                        <label class="fs-2 fw-3" for="pcode">Postcode:</label>
                         <br>
                         <input type="text" id="pcode" maxlength="4" required pattern="[0-9]">
                     </p>
                     <p>
                         <!-- Email address  -->
-                        <label for="mail">Email:</label>
+                        <label class="fs-2 fw-3" for="mail">Email:</label>
                         <br>
                         <input type="email" id="mail" required>
                     </p>
                     <p>
                         <!-- Phone number  -->
-                        <label for="phone">Phone number:</label>
+                        <label class="fs-2 fw-3" for="phone">Phone number:</label>
                         <br>
                         <input type="text" id="phone"  required pattern="^[0-9\s]{8,12}">
                     </p>
                 </div>
             </div>
+
+
             <div class="row dark_gray">
                 <div class="column_50 left">
                     <p>
                         <!-- Skill list  -->
-                        <legend>Skills:</legend>
-                        <label for="python">Python</label>
+                        <legend class="fs-3 mg-b-3r">Skills:</legend>
+                        <label class="fs-2 fw-3" for="python">Python</label>
                         <input type="checkbox" id="python">
-                        <label for="java">Java</label>
+                        <label class="fs-2 fw-3" for="java">Java</label>
                         <input type="checkbox" id="java">
-                        <label for="c">C++</label>
+                        <label class="fs-2 fw-3" for="c">C++</label>
                         <input type="checkbox" id="c">
-                        <label for="oskill">Other</label>
+                        <label class="fs-2 fw-3" for="oskill">Other</label>
                         <input type="checkbox" id="oskill">
                     </p>
                     <p>
                         <!-- Other skills -->
                         <p>&nbsp;</p>
-                        <label for="othskills"><p>Please list out your other skills:</p></label>
+                        <label class="fs-3 mg-t-3r fw-3" for="othskills"><p>Please list out your other skills:</p></label>
                         <br>
-                        <textarea name="" id="othskills" cols="30" rows="10"></textarea>
+                        <textarea name="" placeholder="Other skill you have" id="othskills" cols="30" rows="10"></textarea>
                     </p>
                     <p>
                         <!-- Submit button -->
@@ -144,44 +153,51 @@
                     </p>
                 </div>
                 <div class="column_50">
-                    <img class="logo_apply" src="assets/logo/logo.png" alt="logo">
+                    <img class="logo_apply sc-19" src="assets/icon/survey.png" alt="logo">
                 </div>
             </div>
 
         </form>
     </main>
-    <footer>
-        <div class="footer-content">
-          <div class="footer-left">
-                <img class="logo" src="assets/logo/cookers_logo.png" alt="">
-                <p>Address: A35 Bach Dang Street, Tan Binh District, Vietnam</p>
-                <br>
-                <p>Contact:</p>
-                <p>vu051431@gmail.com</p>
-                <p>arlenephuong05@gmail.com</p>
-                <p>franbow1177@gmail.com</p>
-            </div>
-          <div class="footer-right">
-            <div class="footer-menu">
-                <h4>PERKS & BENEFITS</h4>
-                <a href="index.html" class="nav-item-footer"><h4>Home</h4></a>
-                <a href="jobs.html" class="nav-item-footer"><h4>Jobs</h4></a>
-                <a href="apply.html" class="nav-item-footer"><h4>Apply</h4></a>
-                <a href="about.html" class="nav-item-footer"><h4>About</h4></a>
-            </div>
-            <div class="footer-menu">
-              <h4>FOLLOW US</h4>
-              <ul>
-                <li><a href="#"><img src="assets/icon/facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="assets/icon/twitter.png" alt=""></a></li>
-                <li><a href="#"><img src="assets/icon/linkedin.png" alt=""></a></li>
-              </ul>
-            </div>
-          </div>
+  
+
+
+
+
+    <footer class="w-100 h-40 jtf-evl alit-ct">
+
+        <img class="img h-30" src="/assets/icon/cooker.png" alt="" class="">
+  
+        <div class="h-80pc jtf-cl-btw">
+            <strong>Cookers.co</strong>
+            <p class="lh-3">A35 Bach Dang Street <br>Tan Binh District, Vietnam</p>
+            <p class="lh-3">2023 Cookers Limited. <br>All Rights Reserved.</p>
         </div>
-        <div class="copyright">
-          <p>&copy; 2023 Cookers Limited. All Rights Reserved.</p>
+  
+        <div class="h-80pc jtf-cl-btw">
+            <strong>Navigation</strong>
+            <a href="index.html" class="fs-2r">Home</a>
+            <a href="jobs.html" class="fs-2r">Jobs</a>
+            <a href="apply.html" class="fs-2r">Apply</a>
+            <a href="about.html" class="fs-2r">About</a>
+        </div>
+  
+        <div class="h-80pc jtf-cl-btw">
+            <strong>Contact</strong>
+            <p>vu051431@gmail.com</p>
+            <p>arlenephuong05@gmail.com</p>
+            <p>franbow1177@gmail.com</p>
+            <div class="jtf-btw w-70pc">
+              <i class="fs-2 ph ph-meta-logo"></i>
+              <i class="fs-2 ph ph-twitter-logo"></i>
+              <i class="fs-2 ph ph-linkedin-logo"></i>
+            </div>
         </div>
     </footer>
+
+
+
+
+
 </body>
 </html>
