@@ -458,8 +458,7 @@ h2, h3, h4, p {
     margin-bottom: 0.5rem;
     }
 
-  
-
+   
 
 .card { 
   background-image: linear-gradient(45deg, rgba(255, 78, 255, 0.2), rgba(255, 78, 255, 0.5)) !important;
@@ -467,13 +466,26 @@ h2, h3, h4, p {
 
 
 
+.job-item { 
+  padding: 1rem; 
+  border: 1px solid #dea5ff; 
+  margin-bottom: 1rem; 
+  transition: 0.4s linear;
+}
 
-    .job-item .fs-2.fw-3.lh-3 {
-      display: none; /* Hide the second p by default */
-  }
+.job-item:focus { 
+  background-color: #f1e8ff; /* Change the background color of the parent div when the child div is focused */
+  transition: 0.4s linear;
+}
+
+.job-item .fs-15.fw-3.lh-3 {
+  display: none; /* Hide the second p by default */
+  transition: display 0.4s linear;
+}
   
-  .job-item:focus-within .fs-2.fw-3.lh-3 {
+  .job-item:focus .fs-15.fw-3.lh-3 {
       display: block; /* Show the second p when the parent div is focused */
+      transition: display 0.4s linear;
   }
 
 
