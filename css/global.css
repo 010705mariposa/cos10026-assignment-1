@@ -31,7 +31,7 @@ body {
 }
 
 /* Dark theme if user prefers */
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
     --primary-color: var(--primary-color-dark);
     --secondary-color: var(--secondary-color-dark);

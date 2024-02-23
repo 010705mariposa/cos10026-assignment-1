@@ -1,28 +1,47 @@
+* {
+  font-family: 'Montserrat', sans-serif;
 
-/* text */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+   /* Light theme colors */
+   --primary-color-light: black; /* Example primary color for light theme */
+   --secondary-color-light: white; /* Example secondary color for light theme */
+ 
+   /* Dark theme colors */
+   --primary-color-dark: white; /* Example primary color for dark theme */
+   --secondary-color-dark: black; /* Example secondary color for dark theme */
 
-* { 
-  --custom1-color-light: rgba(255, 78, 255, 1);
-  --custom1-color-dark: rgba(255, 78, 255, 1);
+   --custom1-color-light: rgba(255, 78, 255, 1);
+   --custom1-color-dark: rgba(255, 78, 255, 1);
 
-  --custom2-color-light: rgba(237, 176, 255,1);
-  --custom2-color-dark: rgba(237, 176, 255,1);
+   --custom2-color-light: rgba(237, 176, 255,1);
+   --custom2-color-dark: rgba(237, 176, 255,1);
+
+   color: var(--primary-color);
+}
+
+a { 
+  color: var(--primary-color) !important;
 }
 
 body {
+  --primary-color: var(--primary-color-light);
+  --secondary-color: var(--secondary-color-light);
+
   --custom1-color: var(--custom1-color-light);
   --custom2-color: var(--custom2-color-light);
 }
 
-
 /* Dark theme if user prefers */
 @media (prefers-color-scheme: light) {
   body {
+    --primary-color: var(--primary-color-dark);
+    --secondary-color: var(--secondary-color-dark);
+
     --custom1-color: var(--custom1-color-dark);
     --custom2-color: var(--custom2-color-dark);
   }
 }
+
+
 
 
 h1{
@@ -83,50 +102,11 @@ input[type=submit] {
 }
 /* colors */
 
-.light_gray{
-    /* background-color: #f0f0f0; */
-}
-
-.gray{
-    /* background-color: #d8d8d8; */
-
-}
-
-.grayer{
-    /* background-color:#cccccc; */
-
-}
-
-.dark_gray{
-    /* background-color: #bfbfbf; */
-}
-
-.darker_gray{
-    /* background-color: #a6a6a6; */
-}
 /* navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-}
-  
-.nav-item {
-    float: left;
-    color: black;
-    width: 100%;
-    padding: 15px 15px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    
-}
-
-.nav-item:hover{
-    /* background-color: #666666; */
-    color: white;
 }
 
 /* parent containers */
@@ -202,16 +182,12 @@ td, th {
   font-size: 15px;
 }
 
-.nav-item-footer:hover{
-  color: white;
-}
-
 footer {
     /* background-color:#cccccc; */
+    width: 100vw;
     color: black;
     padding: 30px 0;
-    margin: 0;
-    box-shadow: var(--custom1-color) 0px 3px 5px;
+    box-shadow: var(--custom1-color) 5px -5px 15px;
     background-image: linear-gradient(45deg, rgba(255, 78, 255, 0.1), rgba(255, 78, 255, 0.2)) !important;
   }
   
@@ -271,12 +247,7 @@ footer {
     text-align: center;
       
   }
-    
-  .copyright p {
-    margin: 0;
-    font-size: 0.8rem;
-    color: white;
-  }
+
 
 
 /* ??? */
@@ -448,7 +419,7 @@ h2, h3, h4, p {
     padding: 2rem;
     border: 1px solid black;
     border-radius: 4px;
-    background-image: linear-gradient(45deg, rgb(254, 205, 254), rgb(255, 255, 255)) !important;
+    background-image: linear-gradient(45deg, rgba(254, 205, 254, 0.2), rgba(255, 255, 255, 0.1));
     }
     .job-posting h2 {
     text-align: center;
@@ -470,22 +441,37 @@ h2, h3, h4, p {
   padding: 1rem; 
   border: 1px solid #dea5ff; 
   margin-bottom: 1rem; 
+  /* background-image: none; */
+  background-color: none;
+  transition: 0.4s linear;
+}
+
+.job-item {
+  height: fit-content;
+  transition: height 0.4s linear;
+}
+
+.job-item:hover { 
+  /* background-image: linear-gradient(45deg, rgba(255, 78, 255, 0.2), rgba(255, 78, 255, 0.5)); */
+  background-color: rgba(255, 78, 255, 0.4);
   transition: 0.4s linear;
 }
 
 .job-item:focus { 
-  background-color: #f1e8ff; /* Change the background color of the parent div when the child div is focused */
-  transition: 0.4s linear;
+  height: max-content;
+  transition: height 0.4s linear;
 }
 
 .job-item .fs-15.fw-3.lh-3 {
-  display: none; /* Hide the second p by default */
-  transition: display 0.4s linear;
+  display: none;
+  opacity: 0;
+  transition: 0.4s linear;
 }
   
   .job-item:focus .fs-15.fw-3.lh-3 {
-      display: block; /* Show the second p when the parent div is focused */
-      transition: display 0.4s linear;
+    display: block;
+    opacity: 1;
+    transition: 0.4s linear;
   }
 
 
