@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   font-family: 'Montserrat', sans-serif;
 
@@ -43,10 +45,10 @@ body {
 
 html { 
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 
-/* FILEPATH: /Users/realestzan/Downloads/cos1005/css/responsive.css */
 
 /* Mobile-first styles */
 @media only screen and (max-width: 1024px) {
@@ -167,7 +169,7 @@ html {
   }
 
   header div a { 
-      background-color: red;
+      background-color: transparent;
   }
 
 
@@ -237,10 +239,6 @@ html {
   }
 }
 
-/* Desktop styles */
-@media only screen and (min-width: 1025px) {
-/* Add your desktop styles here */
-}
 
 
 
@@ -790,6 +788,12 @@ html {
 
 img { 
   object-fit: contain;
+  transition: all 0.4s ease-in;
+}
+
+img:hover { 
+  scale: 1.2;
+  transition: all 0.4s ease-in;
 }
 
 .gr-1 { flex-grow: 1; }
@@ -1323,13 +1327,12 @@ img {
 background-image: linear-gradient(45deg, rgba(255, 78, 255, 0.2), rgba(255, 78, 255, 0.5)) !important;
 }
 
-
+/* for job items */
 
 .job-item { 
 padding: 1rem; 
 border: 1px solid #dea5ff; 
 margin-bottom: 1rem; 
-/* background-image: none; */
 background-color: none;
 transition: 0.4s linear;
 }
@@ -1340,7 +1343,6 @@ transition: height 0.4s linear;
 }
 
 .job-item:hover { 
-/* background-image: linear-gradient(45deg, rgba(255, 78, 255, 0.2), rgba(255, 78, 255, 0.5)); */
 background-color: rgba(255, 78, 255, 0.4);
 transition: 0.4s linear;
 }
@@ -1374,6 +1376,7 @@ input, select, textarea{
   background-color: white;
 }
 
+/* table */
 
 table, th, td { 
   border: 0.1px solid var(--custom1-color);
@@ -1391,4 +1394,66 @@ th, td {
 
 td { 
   font-weight: 300 !important;
+}
+
+/* other, mostly for positioning elements */
+
+.jcs{
+  justify-content: stretch;
+}
+
+.top-200{
+  top: 200vh;
+}
+
+.top-235{
+  top: 235vh;
+}
+
+.top-300{
+  top: 300vh;
+}
+
+.top-355{
+  top: 355vh;
+}
+
+.top-400{
+  top: 400vh;
+}
+
+.top-455{
+  top: 455vh;
+}
+
+.top-545{
+  top: 545vh;
+}
+
+.top-675{
+  top: 675vh;
+}
+
+.top-875{
+  top: 875vh;
+}
+
+
+/* anchor links transition */
+.a-color a{
+  text-decoration: none;
+  transition: .5s;
+}
+
+.a-color a:hover{
+  color: rgba(255, 78, 255, 0.4);
+}
+
+.a-clr-drk a{
+  text-decoration: none;
+  transition: .5s;
+}
+
+.a-clr-drk a:hover{
+  color: black;
 }
