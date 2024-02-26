@@ -51,7 +51,7 @@
                         <!-- Date of birth  -->
                         <label class="fs-2 fw-3" for="dob">Date of birth:</label>
                         <br>
-                        <input type="date" id="dob" pattern="\d{1,2}\/\d{1,2}\/\d{4}" required>
+                        <input type="date" id="dob" required>
 
                 </div>
                 <img class="w-40" src="assets/icon/pc.png" alt="logo">
@@ -61,18 +61,18 @@
                 <fieldset class="card mg-t-10vh jtf-ar">
 
                     <div class="bs-1 jtf-btw alit-ct">
-                        <label class="fs-2 fw-3" for="m">Male</label>
-                        <input type="radio" id="m">
+                        <label class="fs-2 fw-3" for="male">Male</label>
+                        <input type="radio" id="male">
                     </div>
 
                     <div class="bs-1 jtf-btw alit-ct">
-                        <label class="fs-2 fw-3" for="f">Female</label>
-                        <input type="radio" id="f">
+                        <label class="fs-2 fw-3" for="female">Female</label>
+                        <input type="radio" id="female">
                     </div>
 
                     <div class="bs-1 jtf-btw alit-ct">
-                        <label class="fs-2 fw-3" for="other">Other</label>
-                        <input type="radio" id="other">
+                        <label class="fs-2 fw-3" for="oth">Other</label>
+                        <input type="radio" id="oth">
                     </div>
                 </fieldset>
 
@@ -92,7 +92,7 @@
 
 
                         <!-- State  -->
-                        <label class="fs-2 fw-3"  id="state">State:</label>
+                        <label class="fs-2 fw-3"  for="state">State:</label>
                         <br>
                         <select class="fs-2 fw-3" id="state" name="tutor">
                             <option value="">Please select</option>
@@ -134,17 +134,17 @@
 
                 <div class="bs-1 jtf-btw alit-ct">
                     <label class="fs-2 fw-3" for="python">Python</label>
-                    <input type="radio" id="m">
+                    <input type="radio" id="python">
                 </div>
 
                 <div class="bs-1 jtf-btw alit-ct">
                     <label class="fs-2 fw-3" for="java">Java</label>
-                    <input type="radio" id="f">
+                    <input type="radio" id="java">
                 </div>
 
                 <div class="bs-1 jtf-btw alit-ct">
                     <label class="fs-2 fw-3" for="Other">Other</label>
-                    <input type="radio" id="other">
+                    <input type="radio" id="Other">
                 </div>
             </fieldset>
 
@@ -155,7 +155,7 @@
 
 
                 <br>
-                <textarea name="" placeholder="Other skill you have" id="othskills" cols="30" rows="10"></textarea>
+                <textarea name="other_skills" placeholder="Other skill you have" id="othskills" cols="30" rows="10"></textarea>
                 <!-- Submit button -->
                 <input type="submit" value="Submit">
             </div>
