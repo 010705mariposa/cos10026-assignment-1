@@ -15,74 +15,82 @@
 
 <!-- navbar -->
     <header class="h-10 pd-h-5 jtf-btw alit-ct">
-      <h1>Cookers</h1>
-      <div class="jtf-evl bs-4 a-color">
-          <a href="index.html" class="fs-2r">Home</a>
-          <a href="jobs.html" class="fs-2r">Jobs</a>
-          <a href="apply.html" class="fs-2r">Apply</a>
-          <a href="about.html" class="fs-2r">About</a>
-      </div>
-      <strong id="hd-su">Sign up</strong>
-  </header>
+        <h1>Cookers</h1>
+        <div class="jtf-evl bs-4 a-color">
+            <a href="index.html" class="fs-2r">Home</a>
+            <a href="jobs.html" class="fs-2r">Jobs</a>
+            <a href="apply.html" class="fs-2r">👉🏻 Apply 👈🏻</a>
+            <a href="about.html" class="fs-2r">About</a>
+        </div>
+        <a href="enhancement.html" class="fs-2r">Enhancement ✨</a>
+    </header>
 
     <main class="pd-h-5 mg-v-10vh">
         <form action=" https://mercury.swin.edu.au/it000000/formtest.php">
             <div class="jtf-btw">
                 <div class="bs-4">
-                    <p>
+
                         <!-- Job reference number -->
                         <label class="fs-2 fw-3" for="refnum">Job reference number:</label>
                         <br>
                         <input type="text" id="refnum" maxlength="5" required pattern="^[a-zA-Z0-9]">
-                    </p>
-                    <p>
+
+
                         <!-- First name -->
                         <label class="fs-2 fw-3" for="fname">First name:</label>
                         <br>
                         <input type="text" id="fname" maxlength="20" required pattern="^[a-zA-Z]">
-                    </p>
-                    <p>
+
+
                         <!-- Last name -->
                         <label class="fs-2 fw-3" for="lname">Last name:</label>
                         <br>
                         <input type="text" id="lname" maxlength="20" required pattern="^[a-zA-Z]">
-                    </p>
-                    <p>
+
+
                         <!-- Date of birth  -->
                         <label class="fs-2 fw-3" for="dob">Date of birth:</label>
                         <br>
                         <input type="date" id="dob" pattern="\d{1,2}\/\d{1,2}\/\d{4}" required>
-                    </p>
+
                 </div>
                 <img class="w-40" src="assets/icon/pc.png" alt="logo">
             </div>
 
                 <!-- Gender  -->
-                <fieldset class="card mg-t-10vh">
-                    <legend><p>Gender</p></legend>
-                    <label class="fs-2 fw-3" for="m"><p>Male</p></label>
-                    <input type="radio" id="m">
-                    <label class="fs-2 fw-3" for="f"><p>Female</p></label>
-                    <input type="radio" id="f">
-                    <label class="fs-2 fw-3" for="other"><p>Other</p></label>
-                    <input type="radio" id="other">
+                <fieldset class="card mg-t-10vh jtf-ar">
+
+                    <div class="bs-1 jtf-btw alit-ct">
+                        <label class="fs-2 fw-3" for="m">Male</label>
+                        <input type="radio" id="m">
+                    </div>
+
+                    <div class="bs-1 jtf-btw alit-ct">
+                        <label class="fs-2 fw-3" for="f">Female</label>
+                        <input type="radio" id="f">
+                    </div>
+
+                    <div class="bs-1 jtf-btw alit-ct">
+                        <label class="fs-2 fw-3" for="other">Other</label>
+                        <input type="radio" id="other">
+                    </div>
                 </fieldset>
 
             <div class="mg-v-20vh">
                 <div>
-                    <p>
+
                         <!-- Street address  -->
                         <label class="fs-2 fw-3" for="address">Street address:</label>
                         <br>
                         <input type="text" id="address" maxlength="40" required pattern="^[a-zA-Z0-9]">
-                    </p>
-                    <p>
+
+
                         <!-- Suburb/town  -->
                         <label class="fs-2 fw-3" for="town">Suburb/Town:</label>
                         <br>
                         <input type="text" id="town" maxlength="40" required pattern="^[a-zA-Z0-9]">
-                    </p>
-                    <p>
+
+
                         <!-- State  -->
                         <label class="fs-2 fw-3"  id="state">State:</label>
                         <br>
@@ -97,50 +105,55 @@
                             <option value="TAS">TAS</option>
                             <option value="ACT">ACT</option>
                         </select>
-                    </p>
-                    <p>
+
+
                         <!-- Postcode -->
                         <label class="fs-2 fw-3" for="pcode">Postcode:</label>
                         <br>
                         <input type="text" id="pcode" maxlength="4" required pattern="[0-9]">
-                    </p>
-                    <p>
+
+
                         <!-- Email address  -->
                         <label class="fs-2 fw-3" for="mail">Email:</label>
                         <br>
                         <input type="email" id="mail" required>
-                    </p>
-                    <p>
+
+
                         <!-- Phone number  -->
                         <label class="fs-2 fw-3" for="phone">Phone number:</label>
                         <br>
                         <input type="text" id="phone"  required pattern="^[0-9\s]{8,12}">
-                    </p>
+
                 </div>
             </div>
 
 
-            <div class="jtf-btw">
-                <div class="bs-5 jsc">
-                        <!-- Skill list  -->
-                        <legend class="fs-3 mg-b-3r">Skills:</legend>
-                        <label class="fs-2 fw-3" for="python">Python</label>
-                        <input type="radio" id="python">
-                        <label class="fs-2 fw-3" for="java">Java</label>
-                        <input type="radio" id="java">
-                        <label class="fs-2 fw-3" for="oskill">Other</label>
-                        <input type="radio" id="oskill">
+
+                <!-- Gender  -->
+                <fieldset class="card mg-t-10vh jtf-ar pd-v-2">
+
+                <div class="bs-1 jtf-btw alit-ct">
+                    <label class="fs-2 fw-3" for="python">Python</label>
+                    <input type="radio" id="m">
                 </div>
-                <div class="bs-5">
-                    <img class="w-30" src="assets/icon/survey.png" alt="logo">
+
+                <div class="bs-1 jtf-btw alit-ct">
+                    <label class="fs-2 fw-3" for="java">Java</label>
+                    <input type="radio" id="f">
                 </div>
-            </div>
+
+                <div class="bs-1 jtf-btw alit-ct">
+                    <label class="fs-2 fw-3" for="Other">Other</label>
+                    <input type="radio" id="other">
+                </div>
+            </fieldset>
+
 
 
             <div class="mg-v-20vh">
                 <!-- Other skills -->
-                <p>&nbsp;</p>
-                <label class="fs-3 mg-t-3r fw-3" for="othskills"><p>Please list out your other skills:</p></label>
+
+
                 <br>
                 <textarea name="" placeholder="Other skill you have" id="othskills" cols="30" rows="10"></textarea>
                 <!-- Submit button -->
@@ -154,29 +167,29 @@
 
 
 
-    <footer class="w-100 h-40 jtf-evl alit-ct">
+    <footer class="w-100 h-40 jtf-evl alit-ct sd card">
 
         <img class="img h-30" src="/assets/icon/cooker.png" alt="icon">
   
         <div class="h-80pc jtf-cl-btw">
             <strong>Cookers.co</strong>
-            <p class="lh-3">A35 Bach Dang Street <br>Tan Binh District, Vietnam</p>
-            <p class="lh-3">2023 Cookers Limited. <br>All Rights Reserved.</p>
+
+
         </div>
   
         <div class="h-80pc jtf-cl-btw a-color">
             <strong>Navigation</strong>
             <a href="index.html" class="fs-2r">Home</a>
             <a href="jobs.html" class="fs-2r">Jobs</a>
-            <a href="apply.html" class="fs-2r">Apply</a>
+            <a href="apply.html" class="fs-2r">👉🏻 Apply 👈🏻</a>
             <a href="about.html" class="fs-2r">About</a>
         </div>
   
         <div class="h-80pc jtf-cl-btw">
             <strong>Contact</strong>
-            <p>vu051431@gmail.com</p>
-            <p>arlenephuong05@gmail.com</p>
-            <p>franbow1177@gmail.com</p>
+
+
+
             <div class="jtf-btw w-70pc">
               <i class="fs-2 ph ph-meta-logo"></i>
               <i class="fs-2 ph ph-twitter-logo"></i>

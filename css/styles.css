@@ -164,13 +164,7 @@ html {
       justify-content: space-between;
       align-items: stretch !important;
   }
-  header .button-90 { 
-      display: none;
-  }
 
-  header div a { 
-      background-color: transparent;
-  }
 
 
   #cl {
@@ -793,6 +787,7 @@ img {
 
 img:hover { 
   scale: 1.2;
+  rotate: 10deg;
   transition: all 0.4s ease-in;
 }
 
@@ -1301,7 +1296,7 @@ img:hover {
 
 
 .sd { 
-  box-shadow: var(--custom1-color) 0px 8px 24px;
+  box-shadow: var(--custom1-color) 3px -5px 25px;
 }
 
 
@@ -1373,7 +1368,8 @@ input, select, textarea{
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* table */
@@ -1440,7 +1436,7 @@ td {
 
 
 /* anchor links transition */
-.a-color a{
+a {
   text-decoration: none;
   transition: .5s;
 }
@@ -1456,4 +1452,20 @@ td {
 
 .a-clr-drk a:hover{
   color: black;
+}
+
+
+
+
+
+
+
+fieldset input { 
+  width: 25px; 
+  height: 25px;
+}
+
+header a { 
+  text-decoration: none;
+  font-size: 1.5rem;
 }
